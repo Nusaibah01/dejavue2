@@ -5,7 +5,7 @@
 }
 #heading{
     text-align: center;
-    color: blueviolet;
+    
 }
 /* form */
 #form{
@@ -15,9 +15,49 @@
     margin-top: 65px;
     background-color: gray;
     padding-left: 30px;
-    border: solid 5px wheat;
+    border: solid 5px black;
    }
+#l{
+    color: aliceblue;
 }
+#convert{
+    border-radius: 2px;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* button styling */

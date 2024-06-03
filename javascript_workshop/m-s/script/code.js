@@ -1,9 +1,9 @@
 // Functionality
-function convertMinutes2Seconds(){
-let minutes = parseInt(document.getElementById(input).value)
+function converToSeconds(){
+let minutes = +(document.getElementById('input').value);
 let seconds = minutes * 60
 
 // Display
-document.getElementById(answer).innerHTML = {seconds}
+document.getElementById('answer').innerText = minutes + "minute(s) is equal to " + seconds + "seconds(s)"
 
 }

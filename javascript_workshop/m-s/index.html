@@ -9,13 +9,13 @@
 <body>
     <h1 id="heading">Time Convertor:</h1>
     <form id="form">
-    <label>Convert Minutes to Seconds</label><br>
+    <label id="l">Convert Minutes to Seconds</label><br>
 
-    <input type="number" placeholder="Enter minute(s)" min="1" id="input" onchange="convertMinutes2Seconds()"><br>
+    <input type="number" placeholder="Enter minute(s)" min="1" id="input"><br>
 
-    <button type="button" id="Convert">Convert</button>
+    <button type="button" id="Convert" onclick="converToSeconds()">Convert</button>
     <div id="answer">
-    
+    <h3>Answer</h3>
     </div>
 </form>
     <script src="script/code.js"></script>
