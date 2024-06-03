@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel="stylesheet" href="css/stylesheet.css">
+    <title>Area of triangle</title>
+</head>
+<body>
+    <h1 id="h1">Find the Area of a triangle</h1>
+    <h3 id="h3">Formula: Area=1/2(Base)(height)</h3>
+    <form id="form">
+    <label>Base:</label>
+    <input type="number" placeholder="Please enter the base value" min="1" id="base">
+    <br>
+    <label>Height:</label>
+    <input type="number" placeholder="Please enter the height value" min="1" id="height" onchange="calculateArea()">
+    <br>
+   <button type="button" onchange="calculateArea()">Submit</button>
+    <div id="output">
+<h3>Area =</h3>
+</div>
+</form>
+
+    <script src="script/code.js"></script>
+</body>
+</html>
