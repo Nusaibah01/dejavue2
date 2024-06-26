@@ -24,7 +24,7 @@ export default createStore({
   seteducation(state, value) {
     state.education = value
   },
-  setexperiancce(state, value){
+  setexperiance(state, value){
     state.experiance = value
   },
   setskills(state, value){
@@ -39,7 +39,7 @@ export default createStore({
 
   },
   actions: {
-   async fetchjobTitel(context) {
+   async fetchJobTitel(context) {
     try{
       let {jobTitel} = ( await axios.get(portfolioURL)).data
       context.commit("setjobTitel", jobTitel)
@@ -68,7 +68,87 @@ export default createStore({
       
 
         
-      }
+      },
+      async fetchEducation(context) {
+        try{
+          let {education} = ( await axios.get(portfolioURL)).data
+          context.commit(" seteducation", education)
+        }catch(e) {
+         Swal.fire({
+        title: "Error",
+        text: "Failed to fetch data",
+        icon: "error",
+        timer: 2000
+       })
+        }
+        
+  
+          
+        },
+        async fetchExperiance(context) {
+          try{
+            let {experiance} = ( await axios.get(portfolioURL)).data
+            context.commit("setexperiance", experiance)
+          }catch(e) {
+           Swal.fire({
+          title: "Error",
+          text: "Failed to fetch data",
+          icon: "error",
+          timer: 2000
+         })
+          }
+          
+    
+            
+          },
+          async fetchSkills(context) {
+            try{
+              let {skills} = ( await axios.get(portfolioURL)).data
+              context.commit("setskills", skills)
+            }catch(e) {
+             Swal.fire({
+            title: "Error",
+            text: "Failed to fetch data",
+            icon: "error",
+            timer: 2000
+           })
+            }
+            
+      
+              
+            },
+            async fetchTestimonials(context) {
+              try{
+                let {testimonials} = ( await axios.get(portfolioURL)).data
+                context.commit("settestimonials", testimonials)
+              }catch(e) {
+               Swal.fire({
+              title: "Error",
+              text: "Failed to fetch data",
+              icon: "error",
+              timer: 2000
+             })
+              }
+              
+        
+                
+              },
+              async fetchProjects(context) {
+                try{
+                  let {projects} = ( await axios.get(portfolioURL)).data
+                  context.commit("setprojects", projects)
+                }catch(e) {
+                 Swal.fire({
+                title: "Error",
+                text: "Failed to fetch data",
+                icon: "error",
+                timer: 2000
+               })
+                }
+                
+          
+                  
+                },
   },
   modules: {
   }
