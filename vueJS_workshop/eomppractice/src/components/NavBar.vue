@@ -1,5 +1,5 @@
   <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg ">
     <div class="container-fluid">
       <router-link class="navbar-brand" to="/">
         <!-- Logo -->
@@ -29,7 +29,7 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about" >About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#resume">Resume</a>
