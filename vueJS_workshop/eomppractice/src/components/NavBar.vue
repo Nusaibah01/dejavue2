@@ -4,7 +4,7 @@
       <router-link class="navbar-brand" to="/">
         <!-- Logo -->
         <img
-          src="https://nusaibah01.github.io/all-images/images/Nusaibah Devs.png"
+          src="https://nusaibah01.github.io/all-images/images/Mylogo.png.png"
           alt="logo"
           class="img-fluid"
           loading="lazy"
