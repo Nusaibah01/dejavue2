@@ -24,7 +24,9 @@ nav a.router-link-exact-active {
 /* Universal Selector */
 
 /* Custom Variables */
-
+::-webkit-scrollbar{
+    display: none;
+}
 /* Select all images */
 img {
     aspect-ratio: 1;
@@ -35,4 +37,13 @@ img {
 /* Logo */
 img[alt='logo'] {
     width: 5rem;
+    border-radius: 50%;
+    border: solid lavenderblush;
+}
+
+/* Wrapper */
+:is(.wrapper){
+    display: grid;
+    grid-template-rows: auto minmax(100dvh, 100%) auto;
+
 }
