@@ -78,8 +78,8 @@ export default createStore({
       try {
         let {
           education
-        } = (await axios.get(portfolioURL)).data
-        context.commit(" seteducation", education)
+        } = await (await axios.get(portfolioURL)).data
+        context.commit("seteducation", education)
       } catch (e) {
         Swal.fire({
           title: "Error",
@@ -96,7 +96,7 @@ export default createStore({
       try {
         let {
           experiance
-        } = (await axios.get(portfolioURL)).data
+        } =  await (await axios.get(portfolioURL)).data
         context.commit("setexperiance", experiance)
       } catch (e) {
         Swal.fire({
@@ -114,7 +114,7 @@ export default createStore({
       try {
         let {
           skills
-        } = (await axios.get(portfolioURL)).data
+        } =  await (await axios.get(portfolioURL)).data
         context.commit("setskills", skills)
       } catch (e) {
         Swal.fire({
@@ -132,7 +132,7 @@ export default createStore({
       try {
         let {
           testimonials
-        } = (await axios.get(portfolioURL)).data
+        } = await (await axios.get(portfolioURL)).data
         context.commit("settestimonials", testimonials)
       } catch (e) {
         Swal.fire({
@@ -150,7 +150,7 @@ export default createStore({
       try {
         let {
           projects
-        } = (await axios.get(portfolioURL)).data
+        } = await (await axios.get(portfolioURL)).data
         context.commit("setprojects", projects)
       } catch (e) {
         Swal.fire({
