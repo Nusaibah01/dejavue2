@@ -1,8 +1,9 @@
 <template>
   <div class="container">
    <div class="row">
+    <LandingSection/>
     <section class="row" id="landing">
-
+ 
     </section>
 
     <section class="row" id="about">
@@ -26,10 +27,12 @@
 
 <script>
 
-
+import LandingSection from '@/components/LandingSection.vue'
 export default {
   name: 'HomeView',
-
+components: {
+  LandingSection
+}
   }
 
 </script>

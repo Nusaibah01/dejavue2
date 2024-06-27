@@ -4,7 +4,7 @@ import Swal from 'sweetalert2/dist/sweetalert2'
 const portfolioURL = 'https://nusaibah01.github.io/vue01/data/data.json'
 export default createStore({
   state: {
-  jobTitel: null,
+  jobTitle: null,
   about: null,
   education: null,
   experiance: null,
@@ -15,8 +15,8 @@ export default createStore({
   getters: {
   },
   mutations: {
-  setjobTitel(state, value) {
-    state.jobTitel = value
+  setjobTitle(state, value) {
+    state.jobTitle = value
   },
   setabout(state, value) {
     state.about = value
@@ -39,10 +39,10 @@ export default createStore({
 
   },
   actions: {
-   async fetchJobTitel(context) {
+   async fetchJobTitle(context) {
     try{
-      let {jobTitel} = ( await axios.get(portfolioURL)).data
-      context.commit("setjobTitel", jobTitel)
+      let {jobTitle} = await ( await axios.get(portfolioURL)).data
+      context.commit("setjobTitle", jobTitle)
     }catch(e) {
      Swal.fire({
     title: "Error",
