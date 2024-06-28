@@ -13,7 +13,6 @@
      <MyResume/>
     </section>
     <section class="row" id="project">
-
     </section>
     <section class="row" id="testimonials">
 
@@ -30,12 +29,14 @@
 import LandingSection from '@/components/LandingSection.vue'
 import About from '@/components/AboutMe.vue'
 import MyResume from '@/components/MyResume.vue'
+
 export default {
   name: 'HomeView',
 components: {
   LandingSection,
   About,
-  MyResume
+  MyResume,
+  
 
 }
   }

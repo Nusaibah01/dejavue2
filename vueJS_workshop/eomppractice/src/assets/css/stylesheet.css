@@ -1,5 +1,9 @@
 /* Bootstrap Icon */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* app */
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -26,6 +30,11 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+/* Landing Section */
+#text{
+  font-family: "Space Mono", monospace;
+}
+
 /* Universal Selector */
 
 /* Custom Variables */
@@ -61,3 +70,16 @@ img[alt='aboutimg'] {
 section {
   scroll-margin-block: 5rem;
 }
+/* media Query */
+@media screen and (width < 800px) {
+  #landing .row {
+    display: block;
+    height: auto;
+  }
+}
+/* Remove white space */
+/* #about img {
+  padding: 0;
+} */
+
+/* border  animation  */

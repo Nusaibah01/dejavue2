@@ -5,14 +5,14 @@
         <img
           src="https://nusaibah01.github.io/all-images/images/Mylogo.png.png"
           alt="logo"
-          class="img-fluid w-75 shadow rounded-top"
+          class="img-fluid w-75 shadow rounded-top border-top"
           loading="lazy"
         />
     </div>
     <div class="col">
         <div id="details">
-            <h1 class="display-1">Nusaibah Charif</h1>
-           <p v-if="title">
+            <h1 class="display-1" id="text">Nusaibah Charif</h1>
+           <p v-if="title" id="text">
             I am an
             <span>{{ title}}</span>
         </p>
